@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.animation-ball{
+    width: 50%;
+    z-index:1;
+    /* position: relative; */
+}
+.animation-ball-botton{
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+
+
