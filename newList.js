@@ -1,13 +1,11 @@
 let create_new_list_btn = $('.new-list')
-let input_text_create_list = $('.input-list-name')
-let insert_list_name = $('.insert-list-name')
 // let list = $('.list')
-let dropdown_content = $('.dropdown-content')
 let click_list_name_navbar = $('.list-element')
 
 
-
-create_new_list_btn.click(function () {
+document.querySelector('.new-list').addEventListener('click', function(){
+    alert("list")
+    let insert_list_name = $('.insert-list-name')
     if (insert_list_name.hasClass('hide')) {
         insert_list_name.removeClass('hide')
         insert_list_name.addClass('show')
@@ -16,9 +14,21 @@ create_new_list_btn.click(function () {
         insert_list_name.addClass('hide')
     }
 })
+/*$('.new-list').click(function () {
+    alert("list")
+    let insert_list_name = $('.insert-list-name')
+    if (insert_list_name.hasClass('hide')) {
+        insert_list_name.removeClass('hide')
+        insert_list_name.addClass('show')
+    } else {
+        insert_list_name.removeClass('show')
+        insert_list_name.addClass('hide')
+    }
+})*/
 
 function createList() {
     // get the data was written down on the input field 
+    let input_text_create_list = $('.input-list-name')
     let list_name = input_text_create_list.val()
     addListNameNavBar(list_name)
     input_text_create_list.val('')
@@ -26,6 +36,7 @@ function createList() {
 }
 
 function addListNameNavBar(list_name) {
+    let dropdown_content = $('.dropdown-content')
     let list = document.createElement('div')
     list.className = 'list'
     dropdown_content.append(list)
@@ -60,7 +71,7 @@ $(document).ready(function () {
 })
 
 function createNewPageList(list_name) {
-    alert("entrouuuuu")
+    
     /* const newPage = document.createElement('html')
      const newHead = document.createElement('head')
      const newBody = document.createElement('body')
@@ -170,7 +181,7 @@ function createNewPageList(list_name) {
         <!-- import jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <!-- import js file -->
-        <script src="index.js"></script>
+        <script src= "index.js"></script>
         <script src="newList.js"></script>
         <script src="downloadList.js"></script>
     
@@ -194,5 +205,4 @@ function createNewPageList(list_name) {
     // script_index.src = 'index.js';
     // document.head.appendChild(script_index);
     //window.location.href = newPageUrl
-    alert("new oage babyyyyyyyyy")
 }

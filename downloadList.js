@@ -1,5 +1,6 @@
-let download_list_btn = $('.download')
+var download_list_btn = $('.download')
 let download_text_list_elements = []
+
 
 download_list_btn.click(function () {
     let get_list_elements = $('.box-item')
