@@ -42,27 +42,26 @@ function showItemList(text) {
     addTextList(text, box_item)
 }
 // mark item list as done
-$(document).ready(function() {
-    $('.elements').on('click', '.box-item', function(e){
+$(document).ready(function () {
+    $('.elements').on('click', '.box-item', function (e) {
         e.target.style.textDecoration = 'line-through';
     })
 })
 
 // Remove item from list after click button delete
-$(document).ready(function(){
-    $(".elements").on('click', ".delete-btn", function(e){
-        e.target.parentNode.remove()
-    })
+$(document).ready(function () {
+   $(".elements").on('click', ".delete-btn", function (e) {
+       e.target.parentNode.remove()
+   })
 })
 
 
-
 // open list items navbar
-$('.drop-btn').click(function(){
-    if($('.dropdown-content').hasClass('hide')){
+$('.drop-btn').click(function () {
+    if ($('.dropdown-content').hasClass('hide')) {
         $('.dropdown-content').addClass('display');
         $('.dropdown-content').removeClass('hide')
-    }else{
+    } else {
         $('.dropdown-content').removeClass('display');
         $('.dropdown-content').addClass('hide')
     }
