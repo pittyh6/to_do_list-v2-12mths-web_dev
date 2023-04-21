@@ -59,66 +59,63 @@ $(document).ready(function () {
     })
 })
 
-/*
-$(document).ready(function () {
-    click_list_name_navbar.on('click', function (e) {
-        console.log("entrouuuuu")
-        console.log(e.target)
-        const newPage = document.createElement('html')
-        const newHead = document.createElement('head')
-        const newBody = document.createElement('body')
-
-        const title = document.createElement("title");
-        title.textContent = "Dynamic Page";
-
-        const heading = document.createElement("h1");
-        heading.textContent = "This is a dynamic page created with JavaScript!";
-
-        newHead.appendChild(title);
-        newBody.appendChild(heading);
-        newPage.appendChild(newHead);
-        newPage.appendChild(newBody);
-
-        document.documentElement.replaceWith(newPage)
-        console.log("new oage babyyyyyyyyy")
-    })
-})
-click_list_name_navbar.click(function (e) {
-
-}) */
 function createNewPageList(list_name) {
     alert("entrouuuuu")
-    alert(list_name)
-    const newPage = document.createElement('html')
-    const newHead = document.createElement('head')
-    const newBody = document.createElement('body')
-
-    const newPageUrl = "/list_name.html"
-
-    const title = document.createElement("title");
-    title.textContent = list_name;
-    const css_index = "public/css/index.css"
-    const css_animation = "public/css/animations.css"
-    const link_index = document.createElement("link")
-    const link_animation = document.createElement("link")
-    link_index.rel = "stylesheet"
-    link_index.type = "text/css"
-    link_index.href = css_index
-    link_animation.rel = "stylesheet"
-    link_animation.type = "text/css"
-    link_animation.href = css_animation
-
-    const heading = document.createElement("h1");
-    heading.textContent = "This is a dynamic page created with JavaScript!";
-
+    /* const newPage = document.createElement('html')
+     const newHead = document.createElement('head')
+     const newBody = document.createElement('body')
+ 
+     const newPageUrl = "/list_name.html"
+ 
+     const title = document.createElement("title");
+     title.textContent = list_name;
+     //css file 
+     const css_index = "public/css/index.css"
+     const css_animation = "public/css/animations.css"
+     const link_index = document.createElement("link")
+     const link_animation = document.createElement("link")
+     link_index.rel = "stylesheet"
+     link_index.type = "text/css"
+     link_index.href = css_index
+     link_animation.rel = "stylesheet"
+     link_animation.type = "text/css"
+     link_animation.href = css_animation
+     //js files
+     // const js_index = "index.js"
+     // const head = newHead[0]
+     // const js_script = document.createElement('script')
+     // js_script.type = "text/javascript"
+     // js_script.src = js_index
+     
+     const heading = document.createElement("h1");
+     heading.textContent = "This is a dynamic page created with JavaScript!";
+ */
     const element_page_html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/animations.css"> -->
+        <link rel="stylesheet" href="public/css/index.css">
+        <link rel="stylesheet" href="public/css/animations.css">
+    
+    
+        <title>${list_name}</title>
+    </head>
+    
+    <body>
+    
         <!-- navbar for lists -->
         <nav>
             <div class="dropdown">
                 <button class="drop-btn">Lists</button>
                 <div class="dropdown-content hide">
                     <div class="list">
-                        <a href="index.html" class="list-element">To do List</a>
+                        <a href="index.html" class="list-element">to do list</a>
                         <button class="delete-btn-list">Delete</button>
                     </div>
                 </div>
@@ -150,7 +147,7 @@ function createNewPageList(list_name) {
     
         <div class="container">
             <header>
-                <h1>To do List</h1>
+                <h1>${list_name}</h1>
             </header>
             <main>
                 <input type="text" class="input-text">
@@ -177,17 +174,25 @@ function createNewPageList(list_name) {
         <script src="newList.js"></script>
         <script src="downloadList.js"></script>
     
+    </body>
+    
+    </html>
+    
    `
 
-    newHead.appendChild(title);
+    /*newHead.appendChild(title);
     newHead.appendChild(link_index)
     newHead.appendChild(link_animation)
     newBody.appendChild(heading);
     newPage.appendChild(newHead);
     newPage.appendChild(newBody);
+ //    newHead.appendChild(js_script)*/
 
-    document.documentElement.replaceWith(newPage)
+    // document.documentElement.replaceWith(newPage)
     document.body.innerHTML = element_page_html
+    // const script_index = document.createElement('script');
+    // script_index.src = 'index.js';
+    // document.head.appendChild(script_index);
     //window.location.href = newPageUrl
     alert("new oage babyyyyyyyyy")
 }
