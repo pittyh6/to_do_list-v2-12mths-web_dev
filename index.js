@@ -39,6 +39,7 @@ function showItemList(text) {
     delete_btn.className = 'delete-btn'
     item_list.append(delete_btn);
     delete_btn.textContent = 'Delete';
+    delete_btn.setAttribute('onclick', 'deleteElementList()')
     addTextList(text, box_item)
 }
 // mark item list as done
@@ -48,13 +49,19 @@ $(document).ready(function () {
     })
 })
 
+/* ---------------------------------------------------------------- */
 // Remove item from list after click button delete
-$(document).ready(function () {
+function deleteElementList(){
+    $(".elements").on('click', ".delete-btn", function (e) {
+        e.target.parentNode.remove()
+    })
+}
+/*$(document).ready(function () {
    $(".elements").on('click', ".delete-btn", function (e) {
        e.target.parentNode.remove()
    })
-})
-
+})*/
+/* ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
 // open list items navbar

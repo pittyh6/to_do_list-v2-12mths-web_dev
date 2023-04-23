@@ -5,7 +5,6 @@ let click_list_name_navbar = $('.list-element')
 
 /* ---------------------------------------------------------------- */
 function createNewList() {
-    alert("list")
     let insert_list_name = $('.insert-list-name')
     if (insert_list_name.hasClass('hide')) {
         insert_list_name.removeClass('hide')
