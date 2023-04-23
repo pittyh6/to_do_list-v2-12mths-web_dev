@@ -3,6 +3,7 @@ let create_new_list_btn = document.querySelector('.new-list')
 // let list = $('.list')
 let click_list_name_navbar = $('.list-element')
 
+/* ---------------------------------------------------------------- */
 function createNewList() {
     alert("list")
     let insert_list_name = $('.insert-list-name')
@@ -25,6 +26,8 @@ function createNewList() {
         insert_list_name.addClass('hide')
     }
 })*/
+/* ---------------------------------------------------------------- */
+
 
 function createList() {
     // get the data was written down on the input field 

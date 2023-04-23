@@ -56,6 +56,7 @@ $(document).ready(function () {
 })
 
 
+/* ---------------------------------------------------------------- */
 // open list items navbar
 function dropBtn(){
         if ($('.dropdown-content').hasClass('hide')) {
@@ -75,3 +76,4 @@ function dropBtn(){
         $('.dropdown-content').addClass('hide')
     }
 })*/
+/* ---------------------------------------------------------------- */
