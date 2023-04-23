@@ -57,7 +57,16 @@ $(document).ready(function () {
 
 
 // open list items navbar
-$('.drop-btn').click(function () {
+function dropBtn(){
+        if ($('.dropdown-content').hasClass('hide')) {
+            $('.dropdown-content').addClass('display');
+            $('.dropdown-content').removeClass('hide')
+        } else {
+            $('.dropdown-content').removeClass('display');
+            $('.dropdown-content').addClass('hide')
+        }
+}
+/*$('.drop-btn').click(function () {
     if ($('.dropdown-content').hasClass('hide')) {
         $('.dropdown-content').addClass('display');
         $('.dropdown-content').removeClass('hide')
@@ -65,4 +74,4 @@ $('.drop-btn').click(function () {
         $('.dropdown-content').removeClass('display');
         $('.dropdown-content').addClass('hide')
     }
-})
+})*/

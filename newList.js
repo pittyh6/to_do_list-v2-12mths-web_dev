@@ -40,7 +40,7 @@ function addListNameNavBar(list_name) {
     let list = document.createElement('div')
     list.className = 'list'
     dropdown_content.append(list)
-
+    
     // create a tag for list nav bar
     let a_list_name = document.createElement('a')
     // add inner html with the same name as list
@@ -124,7 +124,7 @@ function createNewPageList(list_name) {
         <!-- navbar for lists -->
         <nav>
             <div class="dropdown">
-                <button class="drop-btn">Lists</button>
+                <button class="drop-btn" onclick="dropBtn()">Lists</button>
                 <div class="dropdown-content hide">
                     <div class="list">
                         <a href="index.html" class="list-element">to do list</a>
