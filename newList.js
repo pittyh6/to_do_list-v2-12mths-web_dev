@@ -174,7 +174,7 @@ function createNewPageList(list_name) {
             </section>
             <section class="actions">
                 <button type="button" class="action new-list" onclick="createNewList()">Create New List</button>
-                <button type="button" class="action download" >Download List</button>
+                <button type="button" class="action download" onclick="downloadFile()">Download List</button>
             </section>
             <section class="insert-list-name hide">
                 <input type="text" class="input-text input-list-name" placeholder="insert list name">
