@@ -1,22 +1,19 @@
+
 let create_new_list_btn = document.querySelector('.new-list')
 // let list = $('.list')
 let click_list_name_navbar = $('.list-element')
 
-document.addEventListener('DOMContentLoaded', function () {
-
-    create_new_list_btn.addEventListener('click', function () {
-        alert("list clicked")
-        let insert_list_name = $('.insert-list-name')
-        if (insert_list_name.hasClass('hide')) {
-            insert_list_name.removeClass('hide')
-            insert_list_name.addClass('show')
-        } else {
-            insert_list_name.removeClass('show')
-            insert_list_name.addClass('hide')
-        }
-    });
-});
-
+function createNewList() {
+    alert("list")
+    let insert_list_name = $('.insert-list-name')
+    if (insert_list_name.hasClass('hide')) {
+        insert_list_name.removeClass('hide')
+        insert_list_name.addClass('show')
+    } else {
+        insert_list_name.removeClass('show')
+        insert_list_name.addClass('hide')
+    }
+}
 /*$('.new-list').click(function () {
     alert("list")
     let insert_list_name = $('.insert-list-name')
@@ -72,6 +69,7 @@ $(document).ready(function () {
         e.target.parentNode.remove()
     })
 })
+
 
 function createNewPageList(list_name) {
 
@@ -172,7 +170,7 @@ function createNewPageList(list_name) {
                 </div>
             </section>
             <section class="actions">
-                <button type="button" class="action new-list">Create New List</button>
+                <button type="button" class="action new-list" onclick="createNewList()">Create New List</button>
                 <button type="button" class="action download" >Download List</button>
             </section>
             <section class="insert-list-name hide">
@@ -209,3 +207,4 @@ function createNewPageList(list_name) {
     // document.head.appendChild(script_index);
     //window.location.href = newPageUrl
 }
+
