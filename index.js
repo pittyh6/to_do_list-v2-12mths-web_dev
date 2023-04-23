@@ -33,6 +33,7 @@ function showItemList(text) {
     // Create box to add text item list
     let box_item = document.createElement('div');
     box_item.className = 'box-item'
+    box_item.setAttribute('onclick', 'markDoneElement()')
     item_list.append(box_item);
     // Create button delete
     let delete_btn = document.createElement('button')
@@ -42,13 +43,20 @@ function showItemList(text) {
     delete_btn.setAttribute('onclick', 'deleteElementList()')
     addTextList(text, box_item)
 }
+
+/* ---------------------------------------------------------------- */
 // mark item list as done
-$(document).ready(function () {
+function markDoneElement(){
     $('.elements').on('click', '.box-item', function (e) {
         e.target.style.textDecoration = 'line-through';
     })
-})
-
+}
+/*$(document).ready(function () {
+    $('.elements').on('click', '.box-item', function (e) {
+        e.target.style.textDecoration = 'line-through';
+    })
+})*/
+/* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 // Remove item from list after click button delete
 function deleteElementList(){
