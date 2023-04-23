@@ -62,17 +62,25 @@ function addListNameNavBar(list_name) {
     let delete_btn_list_tag = document.createElement('button')
     delete_btn_list_tag.innerHTML = 'Delete'
     delete_btn_list_tag.className = 'delete-btn-list'
+    delete_btn_list_tag.setAttribute('onclick','deleteList()')
     list.append(delete_btn_list_tag)
 }
 
-$(document).ready(function () {
+/* ---------------------------------------------------------------- */
+function deleteList(){
+    $(".dropdown-content").on('click', ".delete-btn-list", function (e) {
+        console.log(e.target)
+        e.target.parentNode.remove()
+    })
+}
+/*$(document).ready(function () {
     // remove list from list navbar
     $(".dropdown-content").on('click', ".delete-btn-list", function (e) {
         console.log(e.target)
         e.target.parentNode.remove()
     })
-})
-
+})*/
+/* ---------------------------------------------------------------- */
 
 function createNewPageList(list_name) {
 
