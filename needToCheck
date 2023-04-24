@@ -10,3 +10,5 @@ Express.js is the backend part of the MEAN and manages routing, sessions, HTTP r
 ejs =  EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to organize things. No reinvention of iteration and control-flow. It's just plain JavaScript.
 
 express route parameter
+
+understanding mongoDB
