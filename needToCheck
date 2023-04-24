@@ -12,3 +12,6 @@ ejs =  EJS is a simple templating language that lets you generate HTML markup wi
 express route parameter
 
 understanding mongoDB
+* download mongoDB - DONE
+* Config mongoDB
+* start mongoDB inside the project
