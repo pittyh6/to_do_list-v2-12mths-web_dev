@@ -17,4 +17,8 @@ understanding mongoDB
     * install - done
     * mv folder to usr - done
     * add PATH - done
+    * create de /data/db folder - done
+    * give the privilege to access the data/db folder - done
+    * verify if was install - done (mongod --version)
+
 * start mongoDB inside the project
