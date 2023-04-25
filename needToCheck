@@ -14,4 +14,7 @@ express route parameter
 understanding mongoDB
 * download mongoDB - DONE
 * Config mongoDB
+    * install - done
+    * mv folder to usr - done
+    * add PATH - done
 * start mongoDB inside the project
