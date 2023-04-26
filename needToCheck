@@ -20,5 +20,9 @@ understanding mongoDB
     * create de /data/db folder - done
     * give the privilege to access the data/db folder - done
     * verify if was install - done (mongod --version)
-
+* config terminal mongodb
+    * install homebrew - done
+    * config 
+* CRUD mongodb
+    * 
 * start mongoDB inside the project
