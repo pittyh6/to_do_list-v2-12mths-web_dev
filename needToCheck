@@ -22,7 +22,8 @@ understanding mongoDB
     * verify if was install - done (mongod --version)
 * config terminal mongodb
     * install homebrew - done
-    * config error
+    * Instal mongo db using brew - done
+    * 
 * CRUD mongodb
     * 
 * start mongoDB inside the project
