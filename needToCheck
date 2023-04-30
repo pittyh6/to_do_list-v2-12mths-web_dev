@@ -23,7 +23,13 @@ understanding mongoDB
 * config terminal mongodb
     * install homebrew - done
     * Instal mongo db using brew - done
-    * understand how to use db - 
+    * understand how to use db - progress
+    * create new db - done
+    * commands
+        * switch between dbs - use db_name - ok
+        * list db - show dbs - ok
+        * to get help - help - ok
+        * to know in which db I'm - db - ok 
 * CRUD mongodb
     * 
 * start mongoDB inside the project
