@@ -46,4 +46,10 @@ understanding mongoDB
             age: 31,
             interesting: ["Anoying","Game"]}
         ])
+    * Query
+        * db.collectionName.find().
+        * db.collectionName.find({"KeyName":"Value"})
+        * https://www.mongodb.com/docs/manual/reference/operator/query/#query-selectors
+        * https://www.mongodb.com/docs/manual/core/document/#query-filter-documents
+        * 
 * start mongoDB inside the project
