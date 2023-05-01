@@ -30,6 +30,20 @@ understanding mongoDB
         * list db - show dbs - ok
         * to get help - help - ok
         * to know in which db I'm - db - ok 
+
 * CRUD mongodb
-    * 
+    * Create 
+        * db.collectionName.insertOne({
+            name: "Alice",
+            age: 34,
+            interesting: ["Study","Kdrama"]
+        })
+        * db.collectionName.insertMany([
+            { name: "Joao",
+            age: 30,
+            interesting: ["Study","Kdrama"]},
+            { name: "Pedro",
+            age: 31,
+            interesting: ["Anoying","Game"]}
+        ])
 * start mongoDB inside the project
