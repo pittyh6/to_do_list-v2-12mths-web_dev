@@ -51,5 +51,8 @@ understanding mongoDB
         * db.collectionName.find({"KeyName":"Value"})
         * https://www.mongodb.com/docs/manual/reference/operator/query/#query-selectors
         * https://www.mongodb.com/docs/manual/core/document/#query-filter-documents
-        * 
+        * db.collectionName.find({"KeyName":"Value"}) return everything
+        * specify field you want to return {second parameter}
+            * db.collectionName.find({_id: 1}, {name:1}) return the _id value and the name value
+            * db.collectionName.find({_id:1}, {name: 1, _id:0}) return only the name.
 * start mongoDB inside the project
