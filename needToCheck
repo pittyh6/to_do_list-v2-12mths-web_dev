@@ -46,7 +46,7 @@ understanding mongoDB
             age: 31,
             interesting: ["Anoying","Game"]}
         ])
-    * Query
+    * READ
         * db.collectionName.find().
         * db.collectionName.find({"KeyName":"Value"})
         * https://www.mongodb.com/docs/manual/reference/operator/query/#query-selectors
@@ -62,7 +62,14 @@ understanding mongoDB
         * create/update new field and value $set
             * db.collectionName.updateOne({_id:1}, {$set: {fieldName: value}}) 
                 * first is which element do you want to change and second is the new field.
-            
+    * DELETE
+        * To delete multiple documents, use  db.collection.deleteMany().
+        * To delete a single document, use  db.collection.deleteOne().
+        * db.collectionName.deleteOne({"KeyName":"Value"})
+        * db.collectionName.deleteMany({"KeyName":"Value"})
+
+
+
 
 
 
