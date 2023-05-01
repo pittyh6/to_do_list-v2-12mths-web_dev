@@ -32,7 +32,7 @@ understanding mongoDB
         * to know in which db I'm - db - ok 
 
 * CRUD mongodb
-    * Create 
+    * CREATE 
         * db.collectionName.insertOne({
             name: "Alice",
             age: 34,
@@ -55,4 +55,16 @@ understanding mongoDB
         * specify field you want to return {second parameter}
             * db.collectionName.find({_id: 1}, {name:1}) return the _id value and the name value
             * db.collectionName.find({_id:1}, {name: 1, _id:0}) return only the name.
+    * UPDATE
+        * To update a single document, use db.collection.updateOne().
+        * To update multiple documents, use db.collection.updateMany().
+        * To replace a document, use  db.collection.replaceOne().
+        * create/update new field and value $set
+            * db.collectionName.updateOne({_id:1}, {$set: {fieldName: value}}) 
+                * first is which element do you want to change and second is the new field.
+            
+
+
+
+
 * start mongoDB inside the project
