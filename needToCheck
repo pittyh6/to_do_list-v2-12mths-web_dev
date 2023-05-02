@@ -30,6 +30,9 @@ understanding mongoDB
         * list db - show dbs - ok
         * to get help - help - ok
         * to know in which db I'm - db - ok 
+        * to delete dtabase 
+            * access db - use db_name 
+            * db.dropDatabase()
 
 * CRUD mongodb
     * CREATE 
@@ -87,7 +90,7 @@ understanding mongoDB
 
 
 
-* start mongoDB inside the project
+* start NATIVE DRIVER mongoDB inside the project
     * https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/
     * create the project
         * inside the project
@@ -126,4 +129,11 @@ understanding mongoDB
                 }
             }
 
-        
+* start MONGOOSE DRIVER mongodb inside a project
+    * https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/
+    * create the project (if doens't have one)
+        * inside the project
+            * create the app.js file
+            * initialize the npm (npm init -y)
+            * install mongodb mongoose driver (npm i mongoose)
+            
