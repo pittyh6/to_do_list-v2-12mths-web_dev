@@ -67,8 +67,21 @@ understanding mongoDB
         * To delete a single document, use  db.collection.deleteOne().
         * db.collectionName.deleteOne({"KeyName":"Value"})
         * db.collectionName.deleteMany({"KeyName":"Value"})
-
-
+    * RELATIONSHIP BETWEEN BDS. 
+        * inside your collection you create the field that receive an array field: [{...}, {....}, {...}]
+            * db.collectionName.insertOne({
+                _id: 1,
+                name: "Pen",
+                price: 0.80,
+                //the embed field
+                review: [
+                    {
+                        autorName: "Joao",
+                        rating: 4.5,
+                        review: "The best pen ever."
+                    }
+                ]
+            })
 
 
 
