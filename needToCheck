@@ -88,3 +88,12 @@ understanding mongoDB
 
 
 * start mongoDB inside the project
+    * https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/
+    * create the project
+        * inside the project
+            * create the app.js file
+            * initialize the npm (npm init -y)
+            * install mongodb driver (npm i mongodb)
+    * Connect db in project
+        * 
+        
