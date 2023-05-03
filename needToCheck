@@ -129,6 +129,10 @@ understanding mongoDB
                 }
             }
 
+
+* to run the app.js
+    * node app.js on terminal
+
 * start MONGOOSE DRIVER mongodb inside a project
     * https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/
     * create the project (if doens't have one)
@@ -136,4 +140,17 @@ understanding mongoDB
             * create the app.js file
             * initialize the npm (npm init -y)
             * install mongodb mongoose driver (npm i mongoose)
-            
+
+* connect mongoose
+    * const mongoose = require('mongoose');
+      mongoose.connect('mongodb://127.0.0.1:27017/dbName', {useNewUrlParser: true}); OR
+      mongoose.connect('mongodb:localhost:27017/dbName', {useNewUrlParser: true}); 
+
+
+* mongoose SCHEMA
+    * nameSchema = name+Schema => fruitsSchema or listSchema... 
+    * const nameSchema = new mongoose.Schema({
+        name: String,
+        rating: Number,
+        reviews: String
+    });
