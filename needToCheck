@@ -11,7 +11,9 @@ ejs =  EJS is a simple templating language that lets you generate HTML markup wi
 
 express route parameter
 
-understanding mongoDB
+//------------------------------------------------//
+UNDERSTANDING MONGODB
+
 * download mongoDB - DONE
 * Config mongoDB
     * install - done
@@ -149,8 +151,24 @@ understanding mongoDB
 
 * mongoose SCHEMA
     * nameSchema = name+Schema => fruitsSchema or listSchema... 
-    * const nameSchema = new mongoose.Schema({
+    * const fruitSchema = new mongoose.Schema({
         name: String,
         rating: Number,
         reviews: String
     });
+
+* MODEL create collection 
+    * const NameModel = mongoose.model("SingularNameCollection",nameSchema);
+        * const Fruit = mongoose.model("Fruit",fruitSchema);
+
+* create the document from the MODEL
+    * const nameDocument = new NameModel({})
+        * const fruit = new Fruit({
+            name: "Apple",
+            rating: 7,
+            reviews: "No bad but no good."
+        })
+
+* SAVE() the document
+    * nameDocument.save();
+        * fruit.save();
