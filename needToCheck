@@ -36,6 +36,7 @@ UNDERSTANDING MONGODB
             * access db - use db_name 
             * db.dropDatabase()
 
+* FILTER: https://www.mongodb.com/docs/manual/reference/operator/query/#query-selectors
 * CRUD mongodb
     * CREATE 
         * db.collectionName.insertOne({
@@ -234,17 +235,35 @@ UNDERSTANDING MONGODB
         })
 
 * DELETE
-     * NameModel.updateOne({conditionFiled: value}, function(err){
-        if(err){
-            console.log(err)
-        }else{
-            console.log("Succesfully deleted element")
-        }
-    })
-        * Fruit.updateOne({name: "Peach"},function(err){
+    * deleteOne()
+        * NameModel.deleteOne({conditionFiled: value}, function(err){
             if(err){
-               console.log(err)
+                console.log(err)
             }else{
-                console.log(" Succesfully deleted the document")
+                console.log("Succesfully deleted element")
             }
         })
+            * Fruit.deleteOne({name: "Peach"},function(err){
+                if(err){
+                console.log(err)
+                }else{
+                    console.log(" Succesfully deleted the document")
+                }
+            })
+    * deleteMany() -> the second parameter is not a must.
+        * NameModel.deleteMany({conditionFiled: value, secondCondition: {filter: value}}, function(err){
+            if(err){
+                console.log(err)
+            }else{
+                console.log("Succesfully deleted element")
+            }
+        })
+            * Fruit.deleteMany({name: "Peach", rating: {$lt: 3}},function(err){
+                if(err){
+                console.log(err)
+                }else{
+                    console.log(" Succesfully deleted the document")
+                }
+            })
+        
+
