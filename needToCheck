@@ -216,3 +216,35 @@ UNDERSTANDING MONGODB
         },
         reviews: String
     });
+
+* UPDATE
+    * NameModel.updateOne({conditionFiled: value}, {whatYouWantToUpdateField: newValue}, function(err){
+        if(err){
+            console.log(err)
+        }else{
+            console.log("Succesfully update file")
+        }
+    })
+        * Fruit.updateOne({_id:3},{name: "Peach}, function(err){
+            if(err){
+               console.log(err)
+            }else{
+                console.log("Succesfully update document")
+            }
+        })
+
+* DELETE
+     * NameModel.updateOne({conditionFiled: value}, function(err){
+        if(err){
+            console.log(err)
+        }else{
+            console.log("Succesfully deleted element")
+        }
+    })
+        * Fruit.updateOne({name: "Peach"},function(err){
+            if(err){
+               console.log(err)
+            }else{
+                console.log(" Succesfully deleted the document")
+            }
+        })
