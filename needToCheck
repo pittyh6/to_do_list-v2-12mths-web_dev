@@ -198,3 +198,6 @@ UNDERSTANDING MONGODB
             }
         })
     
+* close the connection database
+    * inside the function of last call and after it is done 
+        * mongoose.connection.close()
