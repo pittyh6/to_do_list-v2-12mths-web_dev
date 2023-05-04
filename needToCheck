@@ -201,4 +201,18 @@ UNDERSTANDING MONGODB
 * close the connection database
     * inside the function of last call and after it is done 
         * mongoose.connection.close()
-        
+
+* VALIDATION nameCollum: {}
+    * https://mongoosejs.com/docs/validation.html
+    * const fruitSchema = new mongoose.Schema({
+        name: {
+            type: String,
+            required: [true, "Please, insert your name!"]
+        }
+        rating: {
+            type: Number,
+            min:1,
+            max: 5
+        },
+        reviews: String
+    });
