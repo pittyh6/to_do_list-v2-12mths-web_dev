@@ -172,3 +172,29 @@ UNDERSTANDING MONGODB
 * SAVE() the document
     * nameDocument.save();
         * fruit.save();
+
+* insertmany()
+    * const orange = new Fruit({
+        ....
+    })
+     * const banana = new NameFruitModel({
+        ....
+    })
+    Fruit.insertMany([orange, banana], function(err){
+        if(err){
+            console.log(err)
+        }else{
+            console.log("Succesfully saved all the fruits to fruitDB)
+        }
+    })
+
+* READ
+    * NameModel.find(function(err, nameCallBack){})
+        * Fruit.find(function(err, fruits){
+            if(err){
+                console.log(err)
+            }else{
+                console.log(fruits)
+            }
+        })
+    
