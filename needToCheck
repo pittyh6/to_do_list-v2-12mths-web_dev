@@ -266,4 +266,9 @@ UNDERSTANDING MONGODB
                 }
             })
         
-
+* RELATIONSHIP 
+    * nameField: nameSchema
+        * const personSchema = new mongoose.Schema({
+            name: String,
+            favoriteFruit: fruitSchema /here you connect this field to the fruitSchema/
+        }) 
