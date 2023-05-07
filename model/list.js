@@ -11,3 +11,6 @@ const elementSchema = new Schema({
     _id: Number,
     elementName: String,
 })
+
+const List = mongoose.model("List", listSchema)
+export default List;
