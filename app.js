@@ -1,13 +1,22 @@
 //jshint esversion:6
 
-const mongoose = require('mongoose');
-import List from './model/list';
+//const mongoose = require('mongoose');
+import mongoose from 'mongoose';
+import List from './model/list.js';
 mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", {useNewUrlParser: true})
 
+
 //creating a new list 
+/*
+const newList = new List({
+    nameList: 'To Do List',
+    elementItem: "Work"
+})
+newList.save()
+*/
 
 
-
+/*
 const express = require('express')
 const bodyParser = require('body-parser')
 
@@ -28,4 +37,4 @@ app.get("/:customListName", function(req, res){
 
 app.listen(3000, function(){
     console.log('listening on port 3000')
-})
+})*/
