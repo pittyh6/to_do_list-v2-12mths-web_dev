@@ -1,7 +1,11 @@
 //jshint esversion:6
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+import List from './model/list';
 mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", {useNewUrlParser: true})
+
+//creating a new list 
+
 
 
 const express = require('express')
