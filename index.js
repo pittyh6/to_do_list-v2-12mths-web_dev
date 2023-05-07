@@ -1,4 +1,6 @@
 
+
+
 let add_btn = $(".add-btn")
 let get_item_div = $(".items")
 // delete button for delete item list (red button)

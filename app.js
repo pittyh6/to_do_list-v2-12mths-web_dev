@@ -16,6 +16,17 @@ newList.save()
 */
 
 
+//read
+//get the whole element
+List.find().then((lists)=> {
+    console.log(lists);
+})
+//get only the nameList field
+console.log(await List.find().select({nameList: 1, _id: 0}))
+
+
+
+
 /*
 const express = require('express')
 const bodyParser = require('body-parser')

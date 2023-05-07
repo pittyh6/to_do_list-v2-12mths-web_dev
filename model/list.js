@@ -3,7 +3,7 @@ const {Schema, model} = mongoose;
 
 const listSchema = new Schema({
     nameList: String,
-    // elementItem: elementSchema
+    //elementName: elementSchema
 })
 
 const elementSchema = new Schema({
