@@ -22,9 +22,11 @@
             <button class="drop-btn" onclick="dropBtn()">Lists</button>
             <div class="dropdown-content hide">
                 <div class="list">
-                    <a href="index.html" class="list-element">To do List 2</a>
+                    {{#each lists}}
+                    <a href="index.html" class="list-element">Name: {{nameList}}</a>
+                    {{/each}}
                     <button class="delete-btn-list">Delete</button>
-                </div>
+                  </div>
             </div>
         </div>
     </nav>
