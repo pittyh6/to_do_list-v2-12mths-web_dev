@@ -3,7 +3,9 @@
 //import mongoose from 'mongoose';
 //import List from './model/list.js';
 
-const mongoose = require('mongoose');
+const http = require('http')
+const fs = require('fs');
+const mongoose = require('mongoose')
 mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true })
 /*
 const http = require('http');
@@ -75,15 +77,15 @@ newList.save()
 
 
 //read
-/*
+
 //get the whole element
 List.find().then((lists) => {
-    console.log(lists);
+    //console.log(lists);
 })
 //get only the nameList field
 const nameListOnDB = List.find().select({ nameList: 1, _id: 0 })
 console.log(nameListOnDB)
-*/
+
 
 
 
@@ -111,3 +113,28 @@ app.get("/:customListName", function(req, res){
 app.listen(3000, function(){
     console.log('listening on port 3002')
 })*/
+
+
+
+
+
+/*
+const htmlFile = fs.readFileSync('index.html', 'utf8');
+const replacedHtml = htmlFile.replace('ToDoList', nameListOnDB);
+
+// To write the modified HTML to a new file:
+fs.writeFileSync('index.html', replacedHtml, 'utf8');
+*/
+
+/*
+// Read the HTML file
+const htmlFile = fs.readFileSync('index.html', 'utf8');
+
+// Define the content to be appended
+const myVariable = 'Hello Priscila';
+//const appendedContent = `<p>${myVariable}</p>`;
+const appendedContent = `<p>${myVariable}</p>`;
+
+// Append the content to the HTML file
+fs.appendFileSync('index.html', appendedContent, 'utf8');
+*/

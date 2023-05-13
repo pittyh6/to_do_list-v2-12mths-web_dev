@@ -1,5 +1,5 @@
 
-
+//import * as from "./app.js"
 
 let add_btn = $(".add-btn")
 let get_item_div = $(".items")
@@ -24,6 +24,7 @@ function getTextItemList() {
 
 }
 function addTextList(text, box_item) {
+    //box_item.append(text)
     box_item.append(text)
 }
 
