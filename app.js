@@ -77,7 +77,7 @@ newList.save()
 
 
 //read
-
+/*
 //get the whole element
 List.find().then((lists) => {
     //console.log(lists);
@@ -85,6 +85,8 @@ List.find().then((lists) => {
 //get only the nameList field
 const nameListOnDB = List.find().select({ nameList: 1, _id: 0 })
 console.log(nameListOnDB)
+*/
+
 
 
 
@@ -126,7 +128,7 @@ const replacedHtml = htmlFile.replace('ToDoList', nameListOnDB);
 fs.writeFileSync('index.html', replacedHtml, 'utf8');
 */
 
-/*
+/*\\
 // Read the HTML file
 const htmlFile = fs.readFileSync('index.html', 'utf8');
 
