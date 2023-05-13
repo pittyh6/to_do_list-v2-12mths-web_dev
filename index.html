@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/animations.css"> -->
     <link rel="stylesheet" href="public/css/index.css">
     <link rel="stylesheet" href="public/css/animations.css">
+    <script src="app.js"></script>
 
 
     <title>To Do List</title>
@@ -22,9 +23,7 @@
             <button class="drop-btn" onclick="dropBtn()">Lists</button>
             <div class="dropdown-content hide">
                 <div class="list">
-                    {{#each lists}}
-                    <a href="index.html" class="list-element">Name: {{nameList}}</a>
-                    {{/each}}
+                    <a href="index.html" class="list-element">To Do List</a>
                     <button class="delete-btn-list">Delete</button>
                   </div>
             </div>

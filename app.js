@@ -1,12 +1,14 @@
-//jshint esversion:6
+/*jshint esversion: 6 */
 
 //import mongoose from 'mongoose';
 //import List from './model/list.js';
+
+const mongoose = require('mongoose');
+mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true })
+/*
 const http = require('http');
 const fs = require('fs')
 const handlebars = require('handlebars');
-const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true })
 //const List = require('./model/list.js');
 //const List = require('./model/list.js')
 const template = handlebars.compile(fs.readFileSync('index.html', 'utf8'));
@@ -31,9 +33,17 @@ http.createServer(function (req, res) {
         res.end('Page not found');
     }
 }).listen(3001);
+*/
 
 
-
+/*
+//mongoosh read data and show in html file using javascript
+const conn = new mongoose.Mongoose();
+const db = conn.getDB("todolistDB")
+const result = db.lists.find()
+result.forEach(function(doc){
+    printjson(doc)
+})*/
 
 
 const { Schema, model } = mongoose;
@@ -72,7 +82,8 @@ List.find().then((lists) => {
 })
 //get only the nameList field
 const nameListOnDB = List.find().select({ nameList: 1, _id: 0 })
-console.log(nameListOnDB)*/
+console.log(nameListOnDB)
+*/
 
 
 
